@@ -1,0 +1,223 @@
+<meta name="description" content="Portfólio profissional de Jamersom Silva, desenvolvedor Full-Stack especializado em soluções web modernas">
+<title>Dev Jamersom Silva | Portfólio Profissional</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/themes.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="header-content container">
+          <a href="index.html" class="logo">
+            <h1>Dev <span>Jamersom Silva</span></h1>
+          </a>
+          <nav class="main-nav" aria-label="Navegação principal">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="projects.html">Projetos</a></li>
+              <li><a href="about.html">Sobre</a></li>
+              <li><a href="contact.html">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content container">
+                <div class="hero-text">
+                    <h1 class="hero-title">Entre em Contato</h1>
+                <p class="hero-description">Estou disponível para oportunidades e colaborações. Envie sua mensagem!</p>
+            </div>
+        </section>
+
+        <section class="contact-section container">
+            <div class="contact-grid">
+                <!-- Formulário de Contato -->
+                <div class="contact-form-container">
+                    <h2 class="section-subtitle">Envie uma Mensagem</h2>
+                    <form id="contact-form" class="contact-form" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome Completo*</label>
+                                <input type="text" id="name" name="name" required>
+                                <span class="error-message" id="name-error"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="email-error"></span>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto*</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Selecione um assunto</option>
+                                <option value="proposta">Proposta de Trabalho</option>
+                                <option value="orcamento">Orçamento de Projeto</option>
+                                <option value="duvida">Dúvida Técnica</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                            <span class="error-message" id="subject-error"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem*</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <span class="error-message" id="message-error"></span>
+                        </div>
+                        
+                        <div class="form-footer">
+                            <div class="form-group checkbox-group">
+                                <input type="checkbox" id="consent" name="consent" required>
+                                <label for="consent">Aceito compartilhar meus dados conforme a <a href="#" target="_blank">Política de Privacidade</a>*</label>
+                                <span class="error-message" id="consent-error"></span>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block btn-submit">
+                                <span class="btn-text">Enviar Mensagem</span>
+                                <span class="btn-loader">
+                                    <i class="fas fa-spinner fa-spin"></i>
+                                </span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                
+                <!-- Informações de Contato -->
+                <div class="contact-info-container">
+                    <h2 class="section-subtitle">Informações de Contato</h2>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:seu@email.com">Jamersom.silva@outlook.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Telefone/WhatsApp</h3>
+                                <a href="tel:+5581999718893">+5581999718893</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <a href="https://www.linkedin.com/in/jamersom-silva" target="_blank" rel="noopener noreferrer">https://www.linkedin.com/in/jamersom-silva</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <a href="https://github.com/Jamersom-silva" target="_blank" rel="noopener noreferrer">https://github.com/Jamersom-silva</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="business-hours">
+                        <h3>Horário Comercial</h3>
+                        <ul>
+                            <li><span>Segunda-Sexta:</span> 9:00 - 18:00</li>
+                            <li><span>Sábado:</span> 10:00 - 14:00</li>
+                            <li><span>Domingo:</span> Fechado</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="location-map" id="map">
+                        <!-- Mapa será renderizado aqui via JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- CTA Final -->
+         <section class="final-cta">
+          <div class="container">
+              <h2>Pronto para Transformar Sua Ideia em Realidade?</h2>
+              <p>Vamos conversar sobre como posso ajudar no seu próximo projeto</p>
+              <div class="cta-buttons">
+                  <a href="about.html" class="btn btn-secondary btn-large">Conheça Meu Trabalho</a>
+              </div>
+          </div>
+      </section>
+    </main>
+
+      <!-- Rodapé -->
+  <footer class="site-footer">
+    <div class="footer-content container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h3>Sobre Mim</h3>
+          <p>Desenvolvedor Full-Stack especializado em criar soluções digitais performáticas e escaláveis.</p>
+          <div class="social-links">
+            <a href="https://github.com/Jamersom-silva" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/jamersom-silva/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:jamersom.silva@outlook.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Links Rápidos</h3>
+          <ul class="footer-links">
+            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
+            <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projetos</a></li>
+            <li><a href="about.html"><i class="fas fa-chevron-right"></i> Sobre</a></li>
+            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contato</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-col">
+          <h3>Newsletter</h3>
+          <p>Assine para receber atualizações sobre novos projetos e artigos.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Seu melhor e-mail" required>
+            <button type="submit" class="btn btn-accent btn-small">Assinar</button>
+          </form>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; <span id="current-year"></span> Jamersom Silva. Todos os direitos reservados.</p>
+        <div class="legal-links">
+          <a href="#">Política de Privacidade</a>
+          <a href="#">Termos de Serviço</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="assets/js/particles-config.js"></script>
+  
+  <script>
+    // Atualiza o ano atual no footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
