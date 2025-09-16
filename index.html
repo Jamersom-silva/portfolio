@@ -1,252 +1,312 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio profissional de Jamersom Silva, desenvolvedor Full-Stack especializado em soluções web modernas">
-    <title>Dev Jamersom Silva | Portfólio Profissional</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/themes.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.css">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
+    <title>Jamersom Silva - Desenvolvedor</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-  
-    <header class="site-header">
-        <div class="header-content container">
-          <a href="index.html" class="logo">
-            <h1>Dev <span>Jamersom Silva</span></h1>
-          </a>
-          <nav class="main-nav" aria-label="Navegação principal">
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="projects.html">Projetos</a></li>
-              <li><a href="about.html">Sobre</a></li>
-              <li><a href="contact.html">Contato</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content container">
+<body>
+    <!-- Background Effects -->
+    <div class="bg-effects">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+        <div class="gradient-orb orb-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JS</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Início</a></li>
+                <li><a href="#about" class="nav-link">Sobre</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projetos</a></li>
+                <li><a href="#contact" class="nav-link">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
                 <div class="hero-text">
                     <h1 class="hero-title">
-                        <span class="title-line">Transformando ideias em</span>
-                        <span class="title-line highlight">soluções digitais</span>
+                        <span class="title-line">Olá, eu sou</span>
+                        <span class="title-name">Jamersom Silva</span>
+                        <span class="title-role">Desenvolvedor Full Stack</span>
                     </h1>
-                    <h2 class="hero-subtitle">Desenvolvedor Web <span class=""></span></h2>
-                    <p class="hero-description">Crio experiências web performáticas, escaláveis e focadas nos resultados do seu negócio.</p>
-
-            </div>
-        </section>
-
-        <!-- Seção de Serviços -->
-        <section id="services" class="services-section">
-            <div class="container">
-                <h2 class="section-title">Como Posso Ajudar</h2>
-                <p class="section-subtitle">Serviços especializados para impulsionar seu negócio digital</p>
-                <div class="services-grid">
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-laptop-code"></i>
-                        </div>
-                        <h3>Desenvolvimento Web</h3>
-                        <p>Sites e aplicações web personalizadas com as melhores tecnologias do mercado.</p>
-                        <ul class="service-techs">
-                            <li>React/Vue.js</li>
-                            <li>HTML5/CSS3</li>
-                            <li>JavaScript</li>
-                        </ul>
+                    <p class="hero-description">
+                        Criando experiências digitais incríveis com código limpo e design moderno.
+                        Transformo ideias em realidade através da tecnologia.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                        <a href="#contact" class="btn btn-outline">Contato</a>
                     </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-server"></i>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-card">
+                        <div class="card-content">
+                            <div class="code-snippet">
+                                <span class="code-line">const developer = {</span>
+                                <span class="code-line">  name: "Jamersom Silva",</span>
+                                <span class="code-line">  passion: "coding",</span>
+                                <span class="code-line">  magic: true</span>
+                                <span class="code-line">};</span>
+                            </div>
                         </div>
-                        <h3>Back-End & APIs</h3>
-                        <p>Sistemas robustos e APIs eficientes para alimentar sua aplicação.</p>
-                        <ul class="service-techs">
-                            <li>Node.js/Express</li>
-                            <li>Python/Django</li>
-                        </ul>
-                    </div>
-                    
-                    <div class="service-card">
-                        <div class="service-icon">
-                            <i class="fas fa-mobile-alt"></i>
-                        </div>
-                        <h3>Aplicativos Mobile</h3>
-                        <p>Soluções híbridas que funcionam perfeitamente em Android.</p>
-                        <ul class="service-techs">
-                            <li>React Native</li>
-                        </ul>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-   
-
-        <!-- Seção de Tecnologias -->
-        <section class="tech-section">
-            <div class="container">
-                <h2 class="section-title">Tecnologias que Domino</h2>
-                <p class="section-subtitle">Ferramentas modernas para resultados excepcionais</p>
-                
-                <div class="tech-grid">
-                    <div class="tech-item" data-tooltip="React">
-                        <i class="fab fa-react"></i>
-                        <span>React</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Node.js">
-                        <i class="fab fa-node-js"></i>
-                        <span>Node.js</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Python">
-                        <i class="fab fa-python"></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="JavaScript">
-                        <i class="fab fa-js"></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="HTML5">
-                        <i class="fab fa-html5"></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="CSS3">
-                        <i class="fab fa-css3-alt"></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Git">
-                        <i class="fab fa-git-alt"></i>
-                        <span>Git</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="AWS">
-                        <i class="fab fa-aws"></i>
-                        <span>AWS</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Docker">
-                        <i class="fab fa-docker"></i>  <!-- Correto: "fa-docker" em minúsculas -->
-                        <span>Docker</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Google Cloud">
-                        <i class="fab fa-google"></i>
-                        <span>GCP</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Express.js">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" 
-                             class="tech-icon-img" 
-                             alt="Express.js"
-                             style="width: 24px; height: 24px;">
-                        <span>Express</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Django">
-                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" 
-                             class="tech-icon-img" 
-                             alt="Django"
-                             style="width: 24px; height: 24px;">
-                        <span>Django</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="Vue.js">
-                        <i class="fab fa-vuejs"></i>
-                        <span>Vue.js</span>
-                    </div>
-                    <div class="tech-item" data-tooltip="MySQL">
-                        <i class="fas fa-database"></i> <!-- Alternativa: <i class="fab fa-mysql"></i> se preferir o logo oficial -->
-                        <span>MySQL</span>
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-description">
+                        Sou um desenvolvedor apaixonado por criar soluções inovadoras e experiências digitais 
+                        que fazem a diferença. Com foco em tecnologias modernas e design centrado no usuário, 
+                        busco sempre entregar produtos de alta qualidade.
+                    </p>
+                    <p class="about-description">
+                        Minha jornada na programação começou com curiosidade e se transformou em paixão. 
+                        Hoje, trabalho com as mais diversas tecnologias para criar aplicações web robustas 
+                        e interfaces intuitivas.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Projetos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Anos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Dedicação</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Final -->
-        <section class="final-cta">
-            <div class="container">
-                <h2>Pronto para Transformar Sua Ideia em Realidade?</h2>
-                <p>Vamos conversar sobre como posso ajudar no seu próximo projeto</p>
-                <div class="cta-buttons">
-                    <a href="contact.html" class="btn btn-primary btn-large">Iniciar Projeto</a>
-                    <a href="about.html" class="btn btn-secondary btn-large">Conheça Meu Trabalho</a>
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Frontend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML5</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">CSS3</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title">Backend</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PostgreSQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-  <!-- Rodapé -->
-  <footer class="site-footer">
-    <div class="footer-content container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h3>Sobre Mim</h3>
-          <p>Desenvolvedor Full-Stack especializado em criar soluções digitais performáticas e escaláveis.</p>
-          <div class="social-links">
-            <a href="https://github.com/Jamersom-silva" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-              <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/jamersom-silva/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-              <i class="fab fa-linkedin-in"></i>
-            </a>
-            <a href="mailto:jamersom.silva@outlook.com" aria-label="Email">
-              <i class="fas fa-envelope"></i>
-            </a>
-          </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Ver Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-commerce Platform</h3>
+                        <p class="project-description">
+                            Plataforma completa de e-commerce com painel administrativo, 
+                            sistema de pagamentos e gestão de produtos.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Ver Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">
+                            Aplicativo de gerenciamento de tarefas com interface intuitiva 
+                            e funcionalidades avançadas de organização.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Express</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">Ver Demo</a>
+                                <a href="#" class="project-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">
+                            Dashboard interativo para visualização de dados meteorológicos 
+                            com gráficos dinâmicos e previsões.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">Chart.js</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer-col">
-          <h3>Links Rápidos</h3>
-          <ul class="footer-links">
-            <li><a href="index.html"><i class="fas fa-chevron-right"></i> Home</a></li>
-            <li><a href="projects.html"><i class="fas fa-chevron-right"></i> Projetos</a></li>
-            <li><a href="about.html"><i class="fas fa-chevron-right"></i> Sobre</a></li>
-            <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contato</a></li>
-          </ul>
-        </div>
-        
-        <div class="footer-col">
-          <h3>Newsletter</h3>
-          <p>Assine para receber atualizações sobre novos projetos e artigos.</p>
-          <form class="newsletter-form">
-            <input type="email" placeholder="Seu melhor e-mail" required>
-            <button type="submit" class="btn btn-accent btn-small">Assinar</button>
-          </form>
-        </div>
-      </div>
-      
-      <div class="footer-bottom">
-        <p>&copy; <span id="current-year"></span> Jamersom Silva. Todos os direitos reservados.</p>
-        <div class="legal-links">
-          <a href="#">Política de Privacidade</a>
-          <a href="#">Termos de Serviço</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </section>
 
-  <script src="assets/js/main.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-  <script src="assets/js/particles-config.js"></script>
-  
-  <script>
-    // Atualiza o ano atual no footer
-    document.getElementById('current-year').textContent = new Date().getFullYear();
-  </script>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Tem um projeto em mente? Vamos transformar suas ideias em realidade!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">📧</span>
+                            <span class="contact-text"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="284249454d5a5b4745065b41445e49684d45494144064b4745">[email&#160;protected]</a></span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">📱</span>
+                            <span class="contact-text">+55 (11) 99999-9999</span>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">📍</span>
+                            <span class="contact-text">São Paulo, Brasil</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">LinkedIn</a>
+                        <a href="#" class="social-link">Twitter</a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Seu email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input form-textarea" placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">
+                © 2024 Jamersom Silva. Feito com ❤️ e muito código.
+            </p>
+        </div>
+    </footer>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
 </body>
-</html>
 
-    <!-- Scripts -->
-    <script src="assets/js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9.0.0/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="assets/js/particles-config.js"></script>
-    <script src="assets/js/home.js"></script>
-    <script>
-        // Atualiza o ano atual no footer
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-    </script>
-</body>
 </html>
