@@ -8,6 +8,15 @@
     <title>Jamersom Silva - Desenvolvedor</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-pVnH2f5U1Ek6lX1A9ZzZJ5R1Q+XH7h4pY3A+JtYkZp+jk8VYpVgV+1zj3U6Yfsl6VHg0S6gO1rV5HjYQF1p5hA=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+</head>
+
 </head>
 
 <body>
@@ -93,11 +102,11 @@
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">50+</span>
+                            <span class="stat-number">10</span>
                             <span class="stat-label">Projetos</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">3+</span>
+                            <span class="stat-number">1</span>
                             <span class="stat-label">Anos</span>
                         </div>
                         <div class="stat-item">
@@ -110,72 +119,75 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="skills">
-        <div class="container">
-            <h2 class="section-title">Habilidades</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3 class="category-title">Frontend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">HTML5</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="95"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">CSS3</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="90"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">React</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="80"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="category-title">Backend</h3>
-                    <div class="skill-items">
-                        <div class="skill-item">
-                            <span class="skill-name">Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="85"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">MongoDB</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="70"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span class="skill-name">PostgreSQL</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" data-width="75"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills-grid">
+
+      <!-- Frontend -->
+      <div class="skill-category">
+        <h3 class="category-title">Frontend</h3>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
+          <span class="skill-name">React</span>
         </div>
-    </section>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="skill-icon" alt="TypeScript">
+          <span class="skill-name">TypeScript</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="skill-icon" alt="Tailwind CSS">
+          <span class="skill-name">Tailwind CSS</span>
+        </div>
+      </div>
+
+      <!-- Backend -->
+      <div class="skill-category">
+        <h3 class="category-title">Backend</h3>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
+          <span class="skill-name">Node.js</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
+          <span class="skill-name">Python</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django">
+          <span class="skill-name">Django</span>
+        </div>
+      </div>
+
+      <!-- Database & Cloud -->
+      <div class="skill-category">
+        <h3 class="category-title">Database & Cloud</h3>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-icon" alt="MongoDB">
+          <span class="skill-name">MongoDB</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL">
+          <span class="skill-name">PostgreSQL</span>
+        </div>
+
+        <div class="skill-item">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="skill-icon" alt="AWS">
+          <span class="skill-name">AWS</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
@@ -301,7 +313,7 @@
     <footer class="footer">
         <div class="container">
             <p class="footer-text">
-                © 2024 Jamersom Silva. Feito com ❤️ e muito código.
+                © 2025 Jamersom Silva. 
             </p>
         </div>
     </footer>
