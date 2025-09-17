@@ -429,9 +429,30 @@ section {
 }
 
 /* Projects Section */
+.projects-swiper .swiper-slide,
+.project-card {
+    height: 500px; /* altura fixa desejada */
+    
+}
+
+ .projects-swiper .swiper-slide {
+    background: #1e293b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    
+}
+
+
+    .projects-swiper .swiper-slide-active {
+      transform: scale(1.05);
+      
+    }
 .projects {
     background: var(--bg-secondary);
 }
+
 
 .projects-grid {
     display: grid;
@@ -441,6 +462,8 @@ section {
 
 .project-card {
     background: var(--bg-card);
+    display: flex;
+    flex-direction: column;
     border-radius: 1rem;
     overflow: hidden;
     border: 1px solid var(--border-color);
@@ -450,10 +473,11 @@ section {
 
 .project-card:hover {
     transform: translateY(-10px);
+    
 }
 
 .project-image {
-    height: 200px;
+    height: 180px;
     background: var(--gradient-secondary);
     position: relative;
     overflow: hidden;
@@ -461,6 +485,7 @@ section {
 
 .project-overlay {
     position: absolute;
+   
     top: 0;
     left: 0;
     right: 0;
@@ -491,30 +516,44 @@ section {
     transition: background 0.3s ease;
 }
 
+.project-links a {
+      color: #fff;
+      background: #6366f1;
+      padding: 6px 12px;
+      margin: 0 5px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-size: 0.85rem;
+    }
+
 .project-link:hover {
     background: var(--secondary-color);
 }
 
 .project-content {
-    padding: 1.5rem;
+     padding: 15px;
 }
 
-.project-title {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
+ .project-title {
+      margin: 0 0 8px;
+      font-size: 1.1rem;
+      color: #f1f5f9;
+    }
 
-.project-description {
-    color: var(--text-secondary);
-    margin-bottom: 1rem;
-}
+    .project-description {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+      margin-bottom: 10px;
+    }
 
 .project-tech {
     display: flex;
     gap: 0.5rem;
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* impede que quebre a linha */
+    
 }
+
+
 
 .tech-tag {
     background: rgba(99, 102, 241, 0.2);
