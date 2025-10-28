@@ -60,48 +60,81 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1 class="hero-title">
-                        <span class="title-line">Olá, eu sou</span>
-                        <span class="title-name">Jamersom Silva</span>
-                        <span class="title-role">Desenvolvedor Full Stack</span>
-                    </h1>
-                    <p class="hero-description">
-                        Criando experiências digitais incríveis com código limpo e design moderno.
-                        Transformo ideias em realidade através da tecnologia.
-                    </p>
-                    <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">
-                            <i class="fas fa-rocket"></i>
-                            Ver Projetos
-                        </a>
-                        <a href="#contact" class="btn btn-outline">
-                            <i class="fas fa-envelope"></i>
-                            Contato
-                        </a>
-                    </div>
+ <!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="title-line">Olá, eu sou</span>
+                    <span class="title-name">Jamersom Silva</span>
+                    <span class="title-role" id="role">Desenvolvedor Full Stack</span>
+                </h1>
+                <p class="hero-description">
+                    Criando experiências digitais incríveis com código limpo e design moderno.
+                    Transformo ideias em realidade através da tecnologia.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <i class="fas fa-envelope"></i>
+                        Contato
+                    </a>
                 </div>
-                <div class="hero-visual">
-                    <div class="floating-card">
-                        <div class="card-content">
-                            <div class="code-snippet">
-                                <span class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</span>
-                                <span class="code-line">  <span class="code-property">name</span>: <span class="code-string">"Jamersom Silva"</span>,</span>
-                                <span class="code-line">  <span class="code-property">passion</span>: <span class="code-string">"coding"</span>,</span>
-                                <span class="code-line">  <span class="code-property">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>],</span>
-                                <span class="code-line">  <span class="code-property">magic</span>: <span class="code-boolean">true</span></span>
-                                <span class="code-line">};</span>
-                            </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="card-content">
+                        <div class="code-snippet">
+                            <span class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</span>
+                            <span class="code-line">  <span class="code-property">name</span>: <span class="code-string">"Jamersom Silva"</span>,</span>
+                            <span class="code-line">  <span class="code-property">passion</span>: <span class="code-string">"coding"</span>,</span>
+                            <span class="code-line">  <span class="code-property">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>, <span class="code-string">"TypeScript"</span>, <span class="code-string">"Django"</span>, <span class="code-string">"PostgreSQL"</span>, <span class="code-string">"AWS"</span>],</span>
+                            <span class="code-line">  <span class="code-property">magic</span>: <span class="code-boolean">true</span></span>
+                            <span class="code-line">};</span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<script>
+    const roles = ["Front-end", "Back-end", "Full Stack"];
+    let current = 0;
+    let index = 0;
+    let typing = true;
+    const roleElement = document.getElementById("role");
+    const speed = 150; // velocidade de digitação
+
+    function typeRole() {
+        const role = roles[current];
+        if (typing) {
+            roleElement.textContent = `Desenvolvedor ${role.substring(0, index + 1)}`;
+            index++;
+            if (index === role.length) {
+                typing = false;
+                setTimeout(typeRole, 1000); // espera 1s antes de apagar
+                return;
+            }
+        } else {
+            roleElement.textContent = `Desenvolvedor ${role.substring(0, index - 1)}`;
+            index--;
+            if (index === 0) {
+                typing = true;
+                current = (current + 1) % roles.length;
+            }
+        }
+        setTimeout(typeRole, speed);
+    }
+
+    typeRole();
+</script>
+
 
     <!-- About Section -->
     <section id="about" class="about">
@@ -121,7 +154,7 @@
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">15+</span>
+                            <span class="stat-number">10</span>
                             <span class="stat-label">Projetos</span>
                         </div>
                         <div class="stat-item">
@@ -143,273 +176,221 @@
         <h2 class="section-title">Habilidades & Tecnologias</h2>
         <div class="skills-grid">
 
-            <!-- Cada skill individual -->
+            <!-- Python -->
             <div class="skill-item" data-level="Avançado">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
-                <span class="skill-name">React</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
+                <span class="skill-name">Python</span>
             </div>
 
+            <!-- Flask -->
             <div class="skill-item" data-level="Intermediário">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="skill-icon" alt="TypeScript">
-                <span class="skill-name">TypeScript</span>
-            </div>
+                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" class="skill-icon" alt="Flask">
+                <span class="skill-name">Flask</span>
+              </div>
 
+            <!-- Node.js -->
             <div class="skill-item" data-level="Avançado">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="skill-icon" alt="Tailwind CSS">
-                <span class="skill-name">Tailwind CSS</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
+                <span class="skill-name">Node.js</span>
             </div>
 
+            <!-- Django -->
+            <div class="skill-item" data-level="Intermediário">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django">
+                <span class="skill-name">Django</span>
+            </div>
+
+            <!-- JavaScript -->
             <div class="skill-item" data-level="Avançado">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript">
                 <span class="skill-name">JavaScript</span>
             </div>
 
+            <!-- TypeScript -->
             <div class="skill-item" data-level="Intermediário">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
-                <span class="skill-name">Node.js</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="skill-icon" alt="TypeScript">
+                <span class="skill-name">TypeScript</span>
             </div>
 
+            <!-- React -->
+            <div class="skill-item" data-level="Avançado">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
+                <span class="skill-name">React</span>
+            </div>
+
+            <!-- HTML -->
+            <div class="skill-item" data-level="Avançado">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" class="skill-icon" alt="HTML5">
+                <span class="skill-name">HTML5</span>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-item" data-level="Avançado">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" class="skill-icon" alt="CSS3">
+                <span class="skill-name">CSS3</span>
+            </div>
+
+            <!-- Tailwind CSS -->
+            <div class="skill-item" data-level="Avançado">
+                <img src="https://cdn.worldvectorlogo.com/logos/tailwind-css-2.svg" class="skill-icon"  alt="Tailwind CSS">
+
+                <span class="skill-name">Tailwind CSS</span>
+            </div>
+
+            <!-- PostgreSQL -->
             <div class="skill-item" data-level="Intermediário">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
-                <span class="skill-name">Python</span>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL">
+                <span class="skill-name">PostgreSQL</span>
             </div>
 
-            <div class="skill-item" data-level="Básico">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django">
-                <span class="skill-name">Django</span>
-            </div>
-
-            <div class="skill-item" data-level="Intermediário">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="skill-icon" alt="Express">
-                <span class="skill-name">Express</span>
-            </div>
-
+            <!-- MongoDB -->
             <div class="skill-item" data-level="Intermediário">
                 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-icon" alt="MongoDB">
                 <span class="skill-name">MongoDB</span>
             </div>
 
-            <div class="skill-item" data-level="Básico">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL">
-                <span class="skill-name">PostgreSQL</span>
-            </div>
-
-            <div class="skill-item" data-level="Avançado">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git">
-                <span class="skill-name">Git</span>
-            </div>
-
+            <!-- AWS -->
             <div class="skill-item" data-level="Intermediário">
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="skill-icon" alt="Figma">
-                <span class="skill-name">Figma</span>
+                <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/amazonaws.svg" alt="AWS" class="skill-icon">
+
+                <span class="skill-name">AWS</span>
             </div>
 
         </div>
     </div>
 </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="container">
-            <h2 class="section-title">Projetos em Destaque</h2>
+ <!-- Projects Section -->
+<section id="projects" class="projects">
+    <div class="container">
+        <h2 class="section-title">Projetos em Destaque</h2>
 
-            <!-- Swiper -->
-            <div class="swiper projects-swiper">
-                <div class="swiper-wrapper">
+        <!-- Swiper -->
+        <div class="swiper projects-swiper">
+            <div class="swiper-wrapper">
 
-                    <!-- Card 1 -->
-                    <div class="swiper-slide project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop&crop=center" alt="Cardápio Buffet" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://sweet-baunilhajs.vercel.app/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Ver Demo
-                                    </a>
-                                    <a href="https://github.com/Jamersom-silva/SweetBaunilhajs" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Cardápio Buffet</h3>
-                            <p class="project-description">
-                                Plataforma de cardápio digital para o buffet SweetBaunilha com interface moderna e responsiva.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                        </div>
+                <!-- Projeto 1 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">Controle de Vendas</h3>
+                    <p class="project-description">
+                        Sistema de controle de vendas com funcionalidades offline e gerenciamento de produtos.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Ver Demo</a>
+                        <a href="https://github.com/Jamersom-silva/Controle-de-vendas" target="_blank" class="project-link">GitHub</a>
                     </div>
-
-                    <!-- Card 2 -->
-                    <div class="swiper-slide project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop&crop=center" alt="Authentication System" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://authentication-system-1-oyun.onrender.com" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Ver Demo
-                                    </a>
-                                    <a href="https://github.com/Jamersom-silva/authentication-system" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Authentication System</h3>
-                            <p class="project-description">
-                                Sistema de autenticação completo em Django com funcionalidades de login, registro e gerenciamento de usuários.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">HTML</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="swiper-slide project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop&crop=center" alt="WikiForFans Orlando" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://orlando-brown.vercel.app/" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Ver Demo
-                                    </a>
-                                    <a href="https://github.com/Jamersom-silva/WikiForFans-orlando" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">WikiForFans Orlando</h3>
-                            <p class="project-description">
-                                Wiki dedicada aos fãs com estruturação avançada, estilização moderna e recursos visuais interativos.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">CSS3</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="swiper-slide project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=200&fit=crop&crop=center" alt="TimeFocus" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Em Breve
-                                    </a>
-                                    <a href="https://github.com/Jamersom-silva/timefocus" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">TimeFocus</h3>
-                            <p class="project-description">
-                                Aplicativo para gerenciamento de tempo e produtividade com Pomodoro, tarefas e relatórios detalhados.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">TypeScript</span>
-                                <span class="tech-tag">Node.js</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="swiper-slide project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=200&fit=crop&crop=center" alt="Video Gallery" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="https://video-gallery-project.vercel.app/login.html" target="_blank" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Ver Demo
-                                    </a>
-                                    <a href="https://github.com/Jamersom-silva/video_gallery_project" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Video Gallery Project</h3>
-                            <p class="project-description">
-                                Galeria completa de fotos e vídeos com sistema de usuários, upload e download de arquivos.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">JavaScript</span>
-                                <span class="tech-tag">HTML5</span>
-                                <span class="tech-tag">TailwindCSS</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="swiper-slide project-card">
-                        <div class="project-image">
-                            <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=200&fit=crop&crop=center" alt="Jogo da Velha" class="project-img">
-                            <div class="project-overlay">
-                                <div class="project-links">
-                                    <a href="#" class="project-link">
-                                        <i class="fas fa-external-link-alt"></i>
-                                        Em Breve
-                                    </a>
-                                    <a href="https://github.com/Jamersom-silva/jogoDaVelha" target="_blank" class="project-link">
-                                        <i class="fab fa-github"></i>
-                                        GitHub
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project-content">
-                            <h3 class="project-title">Jogo da Velha</h3>
-                            <p class="project-description">
-                                Projeto em React para praticar hooks e props com interface moderna e animações suaves.
-                            </p>
-                            <div class="project-tech">
-                                <span class="tech-tag">React</span>
-                                <span class="tech-tag">CSS3</span>
-                                <span class="tech-tag">JavaScript</span>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
-                <!-- Navigation -->
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+                <!-- Projeto 2 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">TimeFocus</h3>
+                    <p class="project-description">
+                        Aplicativo para gerenciamento de tempo e produtividade com Pomodoro, tarefas e relatórios.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Em Breve</a>
+                        <a href="https://github.com/Jamersom-silva/timefocus" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
 
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
+                <!-- Projeto 3 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">Jogo da Velha</h3>
+                    <p class="project-description">
+                        Projeto em React para praticar hooks e props com interface moderna e animações suaves.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Ver Demo</a>
+                        <a href="https://github.com/Jamersom-silva/jogoDaVelha" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 4 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">SweetBaunilha.js</h3>
+                    <p class="project-description">
+                        Plataforma de cardápio digital para o buffet SweetBaunilha com interface moderna e responsiva.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Em Breve</a>
+                        <a href="https://github.com/Jamersom-silva/SweetBaunilhajs" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 5 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">Pedra, Papel, Tesoura</h3>
+                    <p class="project-description">
+                        Jogo clássico implementado em JavaScript com interface interativa.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Ver Demo</a>
+                        <a href="https://github.com/Jamersom-silva/pedra-papel-tesoura" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 6 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">Bookify</h3>
+                    <p class="project-description">
+                        Plataforma para descobrir livros, ver resumos e explorar novos títulos.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Em Breve</a>
+                        <a href="https://github.com/Jamersom-silva/Bookify" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 7 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">Video Gallery Project</h3>
+                    <p class="project-description">
+                        Galeria completa de fotos e vídeos com sistema de usuários, upload e download de arquivos.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Ver Demo</a>
+                        <a href="https://github.com/Jamersom-silva/video_gallery_project" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 8 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">Authentication System</h3>
+                    <p class="project-description">
+                        Sistema de autenticação completo em Django com login, registro e gerenciamento de usuários.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Em Breve</a>
+                        <a href="https://github.com/Jamersom-silva/authentication-system" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
+                <!-- Projeto 9 -->
+                <div class="swiper-slide project-card">
+                    <h3 class="project-title">WikiForFans Orlando</h3>
+                    <p class="project-description">
+                        Wiki dedicada aos fãs com estruturação avançada, estilização moderna e recursos visuais interativos.
+                    </p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Ver Demo</a>
+                        <a href="https://github.com/Jamersom-silva/WikiForFans-orlando" target="_blank" class="project-link">GitHub</a>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </section>
 
-   <!-- Contact Section -->
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Contact Section -->
 <section id="contact" class="contact">
     <div class="container">
         <h2 class="section-title">Vamos Conversar</h2>
@@ -427,8 +408,8 @@
                         <div class="contact-text">
                             <span class="contact-label">Email</span>
                             <span class="contact-value">
-                                <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="511b303c3423223e3c7f22383d2730113e24253d3e3e3a7f323e3c">
-                                    [email&#160;protected]
+                                <a href="mailto:jamersom.silva@outlook.com">
+                                    jamersom.silva@outlook.com
                                 </a>
                             </span>
                         </div>
@@ -438,8 +419,12 @@
                             <i class="fas fa-phone"></i>
                         </span>
                         <div class="contact-text">
-                            <span class="contact-label">Telefone</span>
-                            <span class="contact-value">+55 (81) 99971-8893</span>
+                            <span class="contact-label">WhatsApp</span>
+                            <span class="contact-value">
+                                <a href="https://wa.me/5581999718893" target="_blank">
+                                    +55 (81) 99971-8893
+                                </a>
+                            </span>
                         </div>
                     </div>
                     <div class="contact-method">
@@ -448,7 +433,11 @@
                         </span>
                         <div class="contact-text">
                             <span class="contact-label">Localização</span>
-                            <span class="contact-value">Recife, Brasil</span>
+                            <span class="contact-value">
+                                <a href="https://www.google.com/maps/place/Recife,+PE,+Brasil" target="_blank">
+                                    Recife, PE, Brasil
+                                </a>
+                            </span>
                         </div>
                     </div>
                 </div>
