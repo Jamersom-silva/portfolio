@@ -2,7 +2,7 @@
 
 ## Arquivos a criar/modificar:
 1. **index.html** - Estrutura principal com seções: Hero, About, Skills, Projects, Contact
-2. **style.css** - Design moderno com efeitos mágicos inspirados no MGX.dev
+2. **style.css** - Design moderno com efeitos mágicos 
 3. **script.js** - Animações interativas e efeitos dinâmicos
 
 ## Características do design:

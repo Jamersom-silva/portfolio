@@ -5,18 +5,33 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon.png" type="image/png">
-  <title>Jamersom Silva - Desenvolvedor</title>
+  <title>Jamersom Silva - Desenvolvedor Full Stack</title>
+  <meta name="description" content="Portfólio de Jamersom Silva - Desenvolvedor Full Stack especializado em React, Node.js, Python e tecnologias modernas.">
+  <meta name="keywords" content="desenvolvedor, full stack, react, nodejs, python, javascript, portfolio">
+  <meta name="author" content="Jamersom Silva">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jamersom Silva - Desenvolvedor Full Stack">
+  <meta property="og:description" content="Criando experiências digitais incríveis com código limpo e design moderno.">
+  <meta property="og:type" content="website">
+  
   <link rel="stylesheet" href="./style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-pVnH2f5U1Ek6lX1A9ZzZJ5R1Q+XH7h4pY3A+JtYkZp+jk8VYpVgV+1zj3U6Yfsl6VHg0S6gO1rV5HjYQF1p5hA=="
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 </head>
 
-</head>
-
 <body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-logo">JS</div>
+            <div class="loader-text">Carregando...</div>
+        </div>
+    </div>
+
     <!-- Background Effects -->
     <div class="bg-effects">
         <div class="gradient-orb orb-1"></div>
@@ -60,18 +75,25 @@
                         Transformo ideias em realidade através da tecnologia.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">Ver Projetos</a>
-                        <a href="#contact" class="btn btn-outline">Contato</a>
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-rocket"></i>
+                            Ver Projetos
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i>
+                            Contato
+                        </a>
                     </div>
                 </div>
                 <div class="hero-visual">
                     <div class="floating-card">
                         <div class="card-content">
                             <div class="code-snippet">
-                                <span class="code-line">const developer = {</span>
-                                <span class="code-line">  name: "Jamersom Silva",</span>
-                                <span class="code-line">  passion: "coding",</span>
-                                <span class="code-line">  magic: true</span>
+                                <span class="code-line"><span class="code-keyword">const</span> <span class="code-variable">developer</span> = {</span>
+                                <span class="code-line">  <span class="code-property">name</span>: <span class="code-string">"Jamersom Silva"</span>,</span>
+                                <span class="code-line">  <span class="code-property">passion</span>: <span class="code-string">"coding"</span>,</span>
+                                <span class="code-line">  <span class="code-property">skills</span>: [<span class="code-string">"React"</span>, <span class="code-string">"Node.js"</span>],</span>
+                                <span class="code-line">  <span class="code-property">magic</span>: <span class="code-boolean">true</span></span>
                                 <span class="code-line">};</span>
                             </div>
                         </div>
@@ -95,15 +117,15 @@
                     <p class="about-description">
                         Minha jornada na programação começou com curiosidade e se transformou em paixão. 
                         Hoje, trabalho com as mais diversas tecnologias para criar aplicações web robustas 
-                        e interfaces intuitivas.
+                        e interfaces intuitivas que proporcionam experiências excepcionais aos usuários.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
-                            <span class="stat-number">10</span>
+                            <span class="stat-number">15+</span>
                             <span class="stat-label">Projetos</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">1</span>
+                            <span class="stat-number">2+</span>
                             <span class="stat-label">Anos</span>
                         </div>
                         <div class="stat-item">
@@ -116,376 +138,448 @@
         </div>
     </section>
 
-  <section id="skills" class="skills">
-  <div class="container">
-    <h2 class="section-title">Habilidades</h2>
-    <div class="skills-grid">
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Habilidades & Tecnologias</h2>
+            <div class="skills-grid">
 
-      <!-- Frontend -->
-      <div class="skill-category">
-        <h3 class="category-title">Frontend</h3>
+                <!-- Frontend -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-palette"></i>
+                        Frontend
+                    </h3>
 
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
-          <span class="skill-name">React</span>
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" class="skill-icon" alt="React">
+                        <span class="skill-name">React</span>
+                        <div class="skill-level">Avançado</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="skill-icon" alt="TypeScript">
+                        <span class="skill-name">TypeScript</span>
+                        <div class="skill-level">Intermediário</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="skill-icon" alt="Tailwind CSS">
+                        <span class="skill-name">Tailwind CSS</span>
+                        <div class="skill-level">Avançado</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" class="skill-icon" alt="JavaScript">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="skill-level">Avançado</div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-server"></i>
+                        Backend
+                    </h3>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
+                        <span class="skill-name">Node.js</span>
+                        <div class="skill-level">Intermediário</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
+                        <span class="skill-name">Python</span>
+                        <div class="skill-level">Intermediário</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django">
+                        <span class="skill-name">Django</span>
+                        <div class="skill-level">Básico</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" class="skill-icon" alt="Express">
+                        <span class="skill-name">Express</span>
+                        <div class="skill-level">Intermediário</div>
+                    </div>
+                </div>
+
+                <!-- Database & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-database"></i>
+                        Database & Tools
+                    </h3>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-icon" alt="MongoDB">
+                        <span class="skill-name">MongoDB</span>
+                        <div class="skill-level">Intermediário</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL">
+                        <span class="skill-name">PostgreSQL</span>
+                        <div class="skill-level">Básico</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" class="skill-icon" alt="Git">
+                        <span class="skill-name">Git</span>
+                        <div class="skill-level">Avançado</div>
+                    </div>
+
+                    <div class="skill-item">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" class="skill-icon" alt="Figma">
+                        <span class="skill-name">Figma</span>
+                        <div class="skill-level">Intermediário</div>
+                    </div>
+                </div>
+
+            </div>
         </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" class="skill-icon" alt="TypeScript">
-          <span class="skill-name">TypeScript</span>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" class="skill-icon" alt="Tailwind CSS">
-          <span class="skill-name">Tailwind CSS</span>
-        </div>
-      </div>
-
-      <!-- Backend -->
-      <div class="skill-category">
-        <h3 class="category-title">Backend</h3>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" class="skill-icon" alt="Node.js">
-          <span class="skill-name">Node.js</span>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" class="skill-icon" alt="Python">
-          <span class="skill-name">Python</span>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" class="skill-icon" alt="Django">
-          <span class="skill-name">Django</span>
-        </div>
-      </div>
-
-      <!-- Database & Cloud -->
-      <div class="skill-category">
-        <h3 class="category-title">Database & Cloud</h3>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" class="skill-icon" alt="MongoDB">
-          <span class="skill-name">MongoDB</span>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" class="skill-icon" alt="PostgreSQL">
-          <span class="skill-name">PostgreSQL</span>
-        </div>
-
-        <div class="skill-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" class="skill-icon" alt="AWS">
-          <span class="skill-name">AWS</span>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- Projects Section -->
-   <section id="projects" class="projects">
-  <div class="container">
-    <h2 class="section-title">Projetos em Destaque</h2>
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projetos em Destaque</h2>
 
-    <!-- Swiper -->
-    <div class="swiper projects-swiper">
-      <div class="swiper-wrapper">
+            <!-- Swiper -->
+            <div class="swiper projects-swiper">
+                <div class="swiper-wrapper">
 
-        <!-- Card 1 -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://sweet-baunilhajs.vercel.app/" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/SweetBaunilhajs" class="project-link">GitHub</a>
-              </div>
+                    <!-- Card 1 -->
+                    <div class="swiper-slide project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=200&fit=crop&crop=center" alt="Cardápio Buffet" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://sweet-baunilhajs.vercel.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Jamersom-silva/SweetBaunilhajs" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Cardápio Buffet</h3>
+                            <p class="project-description">
+                                Plataforma de cardápio digital para o buffet SweetBaunilha com interface moderna e responsiva.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="swiper-slide project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=400&h=200&fit=crop&crop=center" alt="Authentication System" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://authentication-system-1-oyun.onrender.com" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Jamersom-silva/authentication-system" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Authentication System</h3>
+                            <p class="project-description">
+                                Sistema de autenticação completo em Django com funcionalidades de login, registro e gerenciamento de usuários.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">HTML</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="swiper-slide project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=200&fit=crop&crop=center" alt="WikiForFans Orlando" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://orlando-brown.vercel.app/" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Jamersom-silva/WikiForFans-orlando" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">WikiForFans Orlando</h3>
+                            <p class="project-description">
+                                Wiki dedicada aos fãs com estruturação avançada, estilização moderna e recursos visuais interativos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="swiper-slide project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=200&fit=crop&crop=center" alt="TimeFocus" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Em Breve
+                                    </a>
+                                    <a href="https://github.com/Jamersom-silva/timefocus" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TimeFocus</h3>
+                            <p class="project-description">
+                                Aplicativo para gerenciamento de tempo e produtividade com Pomodoro, tarefas e relatórios detalhados.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">TypeScript</span>
+                                <span class="tech-tag">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="swiper-slide project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=400&h=200&fit=crop&crop=center" alt="Video Gallery" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://video-gallery-project.vercel.app/login.html" target="_blank" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Ver Demo
+                                    </a>
+                                    <a href="https://github.com/Jamersom-silva/video_gallery_project" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Video Gallery Project</h3>
+                            <p class="project-description">
+                                Galeria completa de fotos e vídeos com sistema de usuários, upload e download de arquivos.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">HTML5</span>
+                                <span class="tech-tag">TailwindCSS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="swiper-slide project-card">
+                        <div class="project-image">
+                            <img src="https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?w=400&h=200&fit=crop&crop=center" alt="Jogo da Velha" class="project-img">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link">
+                                        <i class="fas fa-external-link-alt"></i>
+                                        Em Breve
+                                    </a>
+                                    <a href="https://github.com/Jamersom-silva/jogoDaVelha" target="_blank" class="project-link">
+                                        <i class="fab fa-github"></i>
+                                        GitHub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Jogo da Velha</h3>
+                            <p class="project-description">
+                                Projeto em React para praticar hooks e props com interface moderna e animações suaves.
+                            </p>
+                            <div class="project-tech">
+                                <span class="tech-tag">React</span>
+                                <span class="tech-tag">CSS3</span>
+                                <span class="tech-tag">JavaScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Cardapio buffet</h3>
-            <p class="project-description">
-              Plataforma de cardapio para o buffet SweetBaunilha.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Card 2 -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://authentication-system-1-oyun.onrender.com" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/authentication-system" class="project-link">GitHub</a>
-              </div>
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Vamos Conversar</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-description">
+                        Tem um projeto em mente? Vamos transformar suas ideias em realidade! 
+                        Estou sempre aberto para novos desafios e oportunidades.
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <div class="contact-text">
+                                <span class="contact-label">Email</span>
+                                <span class="contact-value"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="511b303c3423223e3c7f22383d2730113e24253d3e3e3a7f323e3c">[email&#160;protected]</a></span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </span>
+                            <div class="contact-text">
+                                <span class="contact-label">Telefone</span>
+                                <span class="contact-value">+55 (81) 99971-8893</span>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </span>
+                            <div class="contact-text">
+                                <span class="contact-label">Localização</span>
+                                <span class="contact-value">Recife, Brasil</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Jamersom-silva" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/jamersom-silva/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome *</label>
+                        <input type="text" id="name" class="form-input" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" class="form-input" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" class="form-input" placeholder="Assunto da mensagem">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem *</label>
+                        <textarea id="message" class="form-input form-textarea" placeholder="Sua mensagem..." rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Enviar Mensagem
+                    </button>
+                </form>
             </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Authentication System</h3>
-            <p class="project-description">
-              Projeto simples de sistema de autenticação em Django, com funcionalidades básicas.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">HTML</span>
-            </div>
-          </div>
         </div>
+    </section>
 
-        <!-- Card 3 -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://orlando-brown.vercel.app/" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/WikiForFans-orlando" class="project-link">GitHub</a>
-              </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">
+                    © 2025 Jamersom Silva. Feito com 
+                    <i class="fas fa-heart"></i> 
+                    e muito código.
+                </p>
+                <div class="footer-links">
+                    <a href="#home">Início</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
             </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">WikiForFans-orlando</h3>
-            <p class="project-description">
-              Prática de estruturação de páginas web, estilização com CSS e aplicação de recursos visuais.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-            </div>
-          </div>
         </div>
+    </footer>
 
-        <!-- Card 4 -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/timefocus" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">TimeFocus</h3>
-            <p class="project-description">
-              Aplicativo para gerenciamento de tempo e produtividade, com Pomodoro, tarefas e relatórios.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
-              <span class="tech-tag">TypeScript</span>
-              <span class="tech-tag">Node.js</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="https://video-gallery-project.vercel.app/login.html" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/video_gallery_project" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Video Gallery Project</h3>
-            <p class="project-description">
-              Galeria de fotos e vídeos com registro de usuários, upload e download de arquivos. Backend em Node.js/Express e frontend em HTML/CSS/JS.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">JavaScript</span>
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">TailwindCSS</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 6 (placeholder) -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/jogoDaVelha" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Jogo da velha</h3>
-            <p class="project-description">
-              Projeto em react para treinar os hooks e props.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 7 (placeholder) -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/pedra-papel-tesoura" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">pedra-papel-tesoura</h3>
-            <p class="project-description">
-              Projeto para desenvolver o JavaScript
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 8 (placeholder) -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/Controle-de-vendas" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Controle de vendas</h3>
-            <p class="project-description">
-              Projeto que desenvolvir na faculdade em react native 
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React native</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card 9 (placeholder) -->
-        <div class="swiper-slide project-card">
-          <div class="project-image">
-            <div class="project-overlay">
-              <div class="project-links">
-                <a href="#" class="project-link">Ver Demo</a>
-                <a href="https://github.com/Jamersom-silva/Bookify" class="project-link">GitHub</a>
-              </div>
-            </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">Bookify</h3>
-            <p class="project-description">
-              Esse projeto é para facilitar os fãs  de leituras na hora de procurar novos livros e escritores.
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
-              <span class="tech-tag">JavaScript</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-       <!-- Navegação -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
-
-        <!-- Pagination -->
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </section>
-
-     <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Vamos Conversar</h2>
-      <div class="contact-content">
-        <div class="contact-info">
-          <p class="contact-description">Tem um projeto em mente? Vamos transformar suas ideias em realidade!</p>
-          <div class="contact-methods">
-            <div class="contact-method">
-              <span class="contact-icon">📧</span>
-              <span class="contact-text">Jamersom.silva@outlook.com</span>
-            </div>
-            <div class="contact-method">
-              <span class="contact-icon">📱</span>
-              <span class="contact-text">+55 (81) 99971-8893</span>
-            </div>
-            <div class="contact-method">
-              <span class="contact-icon">📍</span>
-              <span class="contact-text">Recife, Brasil</span>
-            </div>
-          </div>
-          <div class="social-links">
-            <a href="https://github.com/Jamersom-silva" class="social-link">GitHub</a>
-            <a href="https://www.linkedin.com/in/jamersom-silva/" class="social-link">LinkedIn</a>
-            
-          </div>
-        </div>
-        <form class="contact-form">
-          <div class="form-group">
-            <input type="text" class="form-input" placeholder="Seu nome" required>
-          </div>
-          <div class="form-group">
-            <input type="email" class="form-input" placeholder="Seu email" required>
-          </div>
-          <div class="form-group">
-            <textarea class="form-input form-textarea" placeholder="Sua mensagem" rows="5" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-        </form>
-      </div>
-    </div>
-  </section>
-
-   <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <p class="footer-text">© 2025 Jamersom Silva.</p>
-    </div>
-  </footer>
-
-   <!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="module" src="./script.js"></script>
- <!-- Inicializar Swiper -->
-  <script>
-    const swiper = new Swiper(".projects-swiper", {
-      slidesPerView: 3,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
-      breakpoints: {
-        320: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1024: { slidesPerView: 3 },
-      },
-    });
-  </script>
+    <!-- Swiper JS -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    
+    <!-- Main Script -->
+    <script src="./script.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script>
+        const swiper = new Swiper(".projects-swiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: { 
+                    slidesPerView: 1,
+                    spaceBetween: 20
+                },
+                768: { 
+                    slidesPerView: 2,
+                    spaceBetween: 25
+                },
+                1024: { 
+                    slidesPerView: 3,
+                    spaceBetween: 30
+                },
+            },
+        });
+    </script>
 </body>
 
 </html>
